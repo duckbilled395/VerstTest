@@ -1,0 +1,118 @@
+@import 'fonts';
+@import 'mixins';
+
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+
+  &__left-side {
+    margin-top: 19px;
+    width: 210px;
+  }
+
+  &__logo {
+    width: 210px;
+    height: 111px;
+    background-color: #FFCC00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-inner {
+      width: 95px;
+      height: 95px;
+    }
+  }
+
+  &__title {
+
+    & h1 {
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 15px;
+      color: #000000;
+      font-family: 'HeliosCond-Bold';
+      text-align: center;
+    }
+  }
+
+  &__right-side {  }
+
+  &__content {
+
+    .content__upper {
+      width: 930px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 16px;
+
+      border-bottom: 1px solid #D7D7D7;
+
+      &-nav {
+        width: 624px;
+
+        .nav {
+          @include textProps();
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding: 0;
+          margin: 0 0 8px;
+
+          &__item {
+
+            &-link {
+              @include textProps()
+            }
+          }
+        }
+      }
+
+      &-login {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 126px;
+        height: 14px;
+
+        & a {
+          @include textProps()
+        }
+
+        & div {
+          @include textProps()
+        }
+      }
+    }
+
+    .content__bottom {
+      width: 930px;
+
+      .banner {
+        width: 253px;
+        height: 70px;
+        background: #E2E2E2;
+      }
+    }
+  }
+}

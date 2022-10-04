@@ -1,0 +1,20 @@
+@mixin textProps {
+    color: #252525;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+@mixin cartLinkTextProps {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+    text-decoration-line: underline;
+    color: #252525;
+}
